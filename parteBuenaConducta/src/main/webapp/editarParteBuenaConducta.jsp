@@ -8,5 +8,6 @@ if (i > 0) {
 	response.sendRedirect("ListarParteBuenaConducta.jsp");
 } else {
 	response.sendRedirect("mensajeErrorGuardado.jsp");
+	
 }
 %>
