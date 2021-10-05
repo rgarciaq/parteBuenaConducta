@@ -1,0 +1,40 @@
+@charset "UTF-8";
+body{
+	
+	background-color:#DCE3E2;
+	padding:20px;
+	
+}
+
+
+.logo{
+	margin:0 25px;
+}
+.contenedorNombre{
+	display:flex;
+	align-items:flex-end;
+	justify-content:center;
+	flex-direction:column;
+	margin:0 25px;
+	margin-bottom: 20px;
+	
+}
+
+
+.contenedorCentral{
+	margin:0 25px;
+	background-color:#F2F2EE   ;
+	padding:20px;
+	border-radius:10px;
+
+}
+
+.contenedorFinal{
+	margin: 0 25px;
+	
+}
+
+#enviar{
+	margin: 0 100px;
+
+}
