@@ -1,0 +1,13 @@
+CREATE TABLE `table_alumno` (
+  `id` int auto_increment NOT NULL,
+  `nombreAlumnoCompleto` varchar(45) DEFAULT NULL,
+  `curso` varchar(45) DEFAULT NULL,
+ `personaContacto` enum('padre','madre','tutor') DEFAULT NULL,
+  `direccionCentro` varchar(45) DEFAULT NULL,
+  `cp` int DEFAULT NULL,
+  `motivos` varchar(45) DEFAULT NULL,
+  `fecha_llamada` varchar(45) DEFAULT NULL,
+  `hora` varchar(45) DEFAULT NULL,
+  `fecha_registro` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ;

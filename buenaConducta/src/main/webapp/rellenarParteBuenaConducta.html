@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Nuevo Parte</title>
+<meta charset="utf-8">
+<link href = "estilo.css" rel = "stylesheet"/>
+</head>
+<body>
+	<div class="logo">
+	<img src="ies.png">
+	</div>
+	 <h1 align="center"><font face="Arial">NUEVO EMPLEADO</font></h1>
+    <form action="guardarParteBuenaConducta.jsp" method="post">
+	<div class="contenedorNombre">
+	
+		Sr. De <input type="text" id="nombreAlumno" name="nombreAlumno" placeholder="Nombre y apellidos"><br>
+		C/PI/Avda<input type="text" id="direccionCentro" name="direccionCentro"placeholder="Dirección">      
+		
+		<br>C.P<input type="number" pattern="[0-9]{5}" placeholder="12345" id="cp" name="cp">
+		
+		</div>
+		
+	<div class="contenedorCentral">
+		<br><br><h2>ASUNTO: PARTE DE BUENA CONDUCTA</h2>
+		<p>Muy señores nuestros: </p><br>
+		<p>En consonancia con lo dispuesto en nuestro Reglamento Orgánico de Funcionamiento referido a las "Normas de Funcionamiento", apartado VII.b, Amonestaciones; el profesor que haya puesto una amonestación a un alumno/a, podrá anular dicha amonestación, quedando ésta invalidada a todos los efectos.</p>
+		<br><p>Por lo tanto, nos ponemos en contacto con ustedes para informarles de los motivos que han llevado a tramitar dicho "Parte de buena conducta" a su hijo/a: </p>
+		<br><input type="text" id="nombreAlumno" name="nombreAlumno" placeholder="Nombre de alumno/a"> del curso <input type="text" id="curso" name="curso" placeholder="Curso">
+		<br><h2>MOTIVO:</h2>
+		<textarea id="motivos" name="motivos" cols="80" rows="10" value=""></textarea>
+	</div>
+	
+	<div class="contenedorFinal">
+		<br><br>Se llama a la familia el día <input type="text" name="fecha_llamada" id="fecha_llamada" placeholder="dd/mm/aa"> a las <input type="text" id="hora" name="hora" placeholder="hh:mm"> horas.
+		<br><br>Persona con la que se contacta:  
+		<input type="radio" id="padre" name="personaContacto" value="Padre">
+  		<label for="padre">Padre</label>
+
+  		<input type="radio" id="madre" name="personaContacto" value="Madre">
+  		<label for="madre">Madre</label>
+
+  		<input type="radio" id="tutor" name="personaContacto" value="Tutor">
+  		<label for="tutor">Tutor</label>
+
+		<br><br><p>Para cualquier aclaración póngase en contacto con el Centro.</p>
+		
+		<br><br>Navalmoral de la Mata, a <input type="text" name="fecha_registro" id="fecha_registro" placeholder="dd/mm/aa">
+		
+		<br><br><br>Fdo. Raúl Garrido Jiménez
+		<br>Jefe de Estudios<br><br>
+		
+		<input type="submit" class="btn btn-primary" value="Enviar" />
+		<a href="ListarParteBuenaConducta.jsp">
+			<input type="button"  class="btn btn-primary" value="Volver" >
+		</a>
+	</div>
+	</form>
+</body>
+</html>
